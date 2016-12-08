@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+<a th:each="oAuthService:${oAuthServices}" th:href="@{${oAuthService.authorizationUrl}}" href="#"
+    th:text="${oAuthService.oAuthType}">github</a>
+</body>
+</html>

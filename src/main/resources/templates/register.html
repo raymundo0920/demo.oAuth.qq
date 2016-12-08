@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"></meta>
+<title>Insert title here</title>
+</head>
+<body>
+<form action="/register" method="POST">
+  <input type="hidden" name="oAuthType" th:value="${oAuthInfo.oAuthType}"></input>
+  <input type="hidden" name="oAuthId" th:value="${oAuthInfo.oAuthId}"></input>
+  <input type="text" name="username" th:value="${oAuthInfo.user.username}"></input>
+  <input type="password" name="password" ></input>
+  <input type="submit" value="提交"></input>
+</form>
+</body>
+</html>
